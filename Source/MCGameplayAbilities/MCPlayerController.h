@@ -16,15 +16,15 @@ class MCGAMEPLAYABILITIES_API AMCPlayerController : public APlayerController
 
 public:
 	virtual void BeginPlay() override;
-	virtual void Possess(class APawn* P) override;
+	virtual void OnPossess(APawn* InPawn);
 	virtual void AcknowledgePossession(class APawn* P) override;
 
 	UFUNCTION()
-	void UpdateCharacter();
+		void UpdateCharacter();
 
 protected:
 	TSubclassOf<class AMCGameplayAbilitiesCharacter> AbilityCharacterClass;
-	
-	
-	
+
+
+
 };

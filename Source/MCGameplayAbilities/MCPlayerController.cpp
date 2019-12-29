@@ -20,9 +20,9 @@ void AMCPlayerController::BeginPlay()
 	}
 }
 
-void AMCPlayerController::Possess(APawn* P)
+void AMCPlayerController::OnPossess(class APawn* P)
 {
-	Super::Possess(P);
+	Super::OnPossess(P);
 
 	UpdateCharacter();
 }
